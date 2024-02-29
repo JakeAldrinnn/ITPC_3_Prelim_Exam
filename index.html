@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><Button</title>
+        <style>
+          /*Pang id*/
+          #divContainer {
+             text-align: center;
+          }
+          /*pang class name*/
+          .redText { 
+              color: red;
+              background-color: #bebebe;
+          }
+        .redText:hover {
+          color: blue;
+        }
+        #btnlogin {
+          font-size:  large;
+          color: #261;
+        }
+        #btnlogin:hover {
+          cursor: pointer;
+          font-size:  xx-large;
+          color: #261;
+        }
+        </style>
+      
+    </head>
+
+
+  <body>
+    <div style="text-align: center;" id="divContainer">
+      <marquee>
+        <h1>Login</h1>
+      </marquee>
+    <input type="text" placeholder="Username" id="txtUsername" class="redText">
+    <input type="text" placeholder="Password" id="txtPassword" class="redText">
+    <div style="margin-top: Irem;">
+        <button id="btnlogin"onclick="alert('Login successfully.')">Login</button>
+    </div>
+    </div>
+  </body>
+  <script>
+    // javascript
+    console.log("Hello World");
+    let buttonlogin =document.querySelector('#btnlogin');
+    buttonLogin.onclick = function () {
+        alert("YEHEY")
+    }
+</script>
+</html>
