@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><Button</title>
+        <style>
+          /*Pang id*/
+          #divContainer {
+             text-align: center;
+          }
+          /*pang class name*/
+          .redText { 
+              color: red;
+              background-color: white;
+          }
+          .redText:hover {
+          color: brown;
+        }
+        #btnregister {
+          font-size:  large;
+          color: #261;
+        }
+        #btnregister:hover {
+          cursor: pointer;
+          font-size:  x-large;
+          color: #261;
+        }
+        #btncancel {
+        
+          font-size:  large;
+          color: pink;
+        }
+        #btncancel:hover {
+          cursor: pointer;
+          font-size:  x-large;
+          color: pink;
+        }
+        </style>
+      
+    </head>
+
+
+  <body>
+    <div style="text-align: center;" id="divContainer">
+      <marquee>
+        <h3>Login</h13>
+      </marquee>
+    <input type="text" placeholder="Username" id="txtUsername" class="redText">
+    <input type="text" placeholder="Password" id="txtPassword" class="redText">
+    <input type="text" placeholder="Confirm Password" id="txtPass" class="redText">
+    <input type="text" placeholder="First Name" id="txtPass" class="redText">
+    <input type="text" placeholder="Last Name" id="txtPass" class="redText">
+    <div style="margin-top: Irem;">
+        <button id="btncancel"onclick="alert('Login successfully.')">Cancel</button>
+        <a href="./register.html">
+            <button id="btnregister">Register</button></a>
+    </div>
+    </div>
+  </body>
+  <script>
+    // javascript
+    console.log("Hello World");
+    let buttoncancel =document.querySelector('#btncancel');
+    buttoncancel.onclick = function () {
+        alert("CANCELLED")
+    };  
+    console.log("Hello World");
+    let buttonregister =document.querySelector('#btnregister');
+    buttonregister.onclick = function () {
+        alert("REGISTER")
+    };
+</script>
+</html>
